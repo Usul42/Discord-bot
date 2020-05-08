@@ -42,7 +42,7 @@ async def reddit_function(ctx, *args):
     nb = int(nb)
     if nb > 5:
         nb = 5
-    for e in REDDIT.subreddit(sub).hot(limit=None):
+    for e in REDDIT.subreddit(sub).random_rising():
         try:
             if nb == 0:
                 break
